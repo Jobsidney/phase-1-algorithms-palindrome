@@ -1,14 +1,7 @@
 function isPalindrome(word) {
   // Write your algorithm here
-  const wordArrray=word.split("")
-  const reversedWord=wordArrray.reverse().join("")
-  if(reversedWord===word) {
-    console.log(word);
-    return true;
-  }else{
-    console.log('error');
-    return false;
-  }
+  const wordArrray=word.split("").reverse().join("")
+  return wordArrray===word
 }
 isPalindrome('abba')
 isPalindrome('a')
